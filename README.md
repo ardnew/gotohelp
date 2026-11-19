@@ -2,7 +2,7 @@
 
 I love the ergonomics of `go help`:
 
-![go help](https://vhs.charm.sh/vhs-4TKdPXVBYSmUzxjP7ZmtS3.gif)
+![go help](https://vhs.charm.sh/vhs-3Sau4u5QB6OVnmaOrj19MI.gif)
 
 `gotohelp` skips this charade and shows the help. Give it the arguments you would give to `go` and add `-h` or `--help` before any `--` argument.
 
