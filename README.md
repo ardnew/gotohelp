@@ -29,14 +29,12 @@ The command uses the same input, output, and error streams as `gotohelp`. Its ex
 
 Without `-h` or `--help` before `--`, `gotohelp` prints or runs the original arguments without changes.
 
-## Use as `go`
+## Use as wrapper for the `go` command
 
-Add this function to your shell configuration to run `gotohelp` when you enter `go`:
+Add this function to your shell configuration to run `gotohelp` when you call `go`:
 
 ```sh
-go() {
-    GOTOHELPGO=go gotohelp "$@"
-}
+go() { GOTOHELPGO=go gotohelp "$@" ; }
 ```
 
 For example, `go build -h` runs `go help build`. The function does not call itself: `gotohelp` finds the Go executable in `PATH`.
